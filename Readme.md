@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Станислав Кондрашов](https://up.htmlacademy.ru/adaptive/18/user/207684).
-* Наставник: `Марина Удовенко`.
+* Наставник: [Марина Удовенко](https://htmlacademy.ru/profile/id7570).
 
 ---
 
