@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
-    
+
   </head>
   <body>
   	<header class="page-header">
@@ -17,7 +17,7 @@
   				<li class="site-list__item">
   					<a href="catalog.html">Каталог товаров</a>
   				</li>
-  				<li class="site-list__item">
+  				<li class="site-list__item site-list__item--active">
   					<a href="form.html">Вязание на заказ</a>
   				</li>
   				<li class="site-list__item">
@@ -30,7 +30,7 @@
   				</li>
   			</ul>
   		    </div>
-  		</nav>		
+  		</nav>
   	</header>
   	<main>
   		<h2>Вязание на заказ</h2>
@@ -92,14 +92,27 @@
   			</fieldset>
   		</form>
   	</main>
-  	<footer>
-    	<ul>
-    		<li><a href=""><img src="" alt="instagram"></a></li>
-    		<li><a href=""><img src="" alt="facebook"></a></li>
-    		<li><a href=""><img src="" alt="twitter"></a></li>
-    	</ul>
-    	<p>Разработано</p>
-    	<a href=""><img src=""></a>
+  	<footer class="page-footer">
+      <div class="page-footer__logo">
+        <a class="logo__link" href="index.html"></a>
+      </div>
+      <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
     </footer>
   </body>
 </html>
