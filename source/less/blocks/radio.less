@@ -1,0 +1,28 @@
+.radio__label--radio {
+  position: relative;
+  padding-left: 62px;
+  padding-right: 62px;
+
+  &::before {
+    box-sizing: border-box;
+    content: "";
+    position: absolute;
+    top: -9px;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #000000;
+    border-radius: 50%;
+  }
+}
+
+.radio--control:checked + .radio__label--radio::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 12px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #63d1bb;
+}
