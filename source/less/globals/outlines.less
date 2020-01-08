@@ -1,0 +1,46 @@
+body {
+  background: @bg url("../img/mishka-index-mobile.png") no-repeat 50% 0;
+  background-size: 320px auto;
+  min-height: 4248px;
+}
+
+@media (min-width: @tablet-width) {
+  body {
+    background: @bg url("../img/mishka-index-tablet.jpg") no-repeat 50% 0;
+    background-size: 768px auto;
+    min-height: 3710px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  body {
+    background: @bg url("../img/mishka-index-desktop.jpg") no-repeat 50% 0;
+    background-size: 1150px auto;
+  }
+}
+
+.top-menu {
+  //временно для сетки
+  min-height: 317px;
+  background-color: rgba(153, 99, 209, 0.3);
+}
+
+@media (min-width: @tablet-width) {
+  .top-menu {
+    //временно для сетки
+    min-height: 128px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .top-menu {
+    //временно для сетки
+    min-height: 90px;
+  }
+
+  .top-menu__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
