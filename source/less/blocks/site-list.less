@@ -15,6 +15,21 @@
   min-height: 77px;
 }
 
+@media (min-width: @tablet-width) {
+  .site-list__item {
+    width: 131px;
+    border: 1px solid red;
+  }
+
+  .site-list__item:nth-child(3) {
+    display: none;
+  }
+
+  .site-list__item:nth-child(4) {
+    width: 230px;
+  }
+}
+
 .site-list__link {
   color: #000000;
   text-decoration: none;

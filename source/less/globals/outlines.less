@@ -6,16 +6,20 @@ body {
 
 @media (min-width: @tablet-width) {
   body {
+    width: 768px;
     background: @bg url("../img/mishka-index-tablet.jpg") no-repeat 50% 0;
     background-size: 768px auto;
     min-height: 3710px;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: @desktop-width) {
   body {
+    width: 1150px;
     background: @bg url("../img/mishka-index-desktop.jpg") no-repeat 50% 0;
     background-size: 1150px auto;
+    margin: 0 auto;
   }
 }
 
@@ -30,6 +34,12 @@ body {
     //временно для сетки
     min-height: 128px;
   }
+
+  .top-menu__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -41,7 +51,6 @@ body {
   .top-menu__list {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
   }
 }
 
