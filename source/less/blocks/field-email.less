@@ -1,0 +1,107 @@
+.field-email {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 33px;
+
+  &__legend::after {
+    left: 82px;
+
+    width: 178px;
+  }
+
+  &__field {
+    position: relative;
+    z-index: 1;
+
+    padding-top: 22px;
+    padding-bottom: 16px;
+    padding-right: 45px;
+    .font(17px; 400; 18px);
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid @border-dark;
+
+    &::placeholder {
+      color: @placeholder;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+
+    top: 33px;
+    right: 4px;
+
+    width: 32px;
+    height: 32px;
+
+    opacity: 0.2;
+  }
+
+  &__field:hover {
+    border-color: @main-contrast;
+  }
+
+  &__field:active,
+  &__field:focus {
+    border-color: @main-contrast;
+
+    &::placeholder {
+      color: @placeholder-act;
+    }
+  }
+
+  &__field:hover ~ &__icon,
+  &__field:focus ~ &__icon,
+  &__field:active ~ &__icon {
+    opacity: 1;
+    fill: @main-contrast;
+  }
+}
+
+@media (min-width: @table-width) {
+  .field-email {
+    flex-direction: row;
+    align-items: baseline;
+    .container(668px; 50px);
+    margin: 0 auto;
+    margin-bottom: 50px;
+
+    &__field {
+      box-sizing: border-box;
+      width: 500px;
+      margin-bottom: 50px;
+      margin-left: auto;
+      padding-top: 16px;
+      padding-left: 16px;
+      padding-bottom: 13px;
+      font-size: 19px;
+    }
+
+    &__icon {
+      top: 16px;
+      right: 72px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .field-email {
+    .container(1050px; 50px);
+
+    &__legend {
+      margin-left: 62px;
+    }
+
+    &__field {
+      width: 700px;
+      margin-right: 175px;
+    }
+
+    &__icon {
+      top: 16px;
+      right: 229px;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.copyright {
+  position: relative;
+  .center(183px);
+
+  &__link {
+    display: block;
+
+    &:hover,
+    &:focus {
+      .copyright__logo {
+        fill: @link-contrast;
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  &__text {
+    display: block;
+    padding-top: 27px;
+    padding-bottom: 33px;
+    .font(19px; 700; 18px);
+    color: @link-color;
+  }
+
+  &__logo {
+    position: absolute;
+    top: 22px;
+    right: 1px;
+
+    width: 27px;
+    height: 34px;
+
+    fill: @main-contrast;
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+@media (min-width: @table-width) {
+  .copyright {
+    margin: 0;
+
+    &__text {
+      padding-bottom: 25px;
+    }
+
+    &__logo {
+      right: -1px;
+    }
+  }
+}
